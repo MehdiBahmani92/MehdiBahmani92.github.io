@@ -1,110 +1,57 @@
+
 <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μεhdi Βαhmani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
+                <li><a href="#contact">تماس با من</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		   
-<html>
-	<head>
-		<title>Μεhdi Βαhmani</title>
-		<style>
-			/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%
-}
+    <section id="about" class="two-column">
+        <div class="left-column">
+            <h2>درباره من</h2>
+            <p>
+                As a design and manufacturing engineer with a background in aerospace and mechanical engineering, I have been creating flying robots and robotics products for over 5 years using a variety of manufacturing techniques. With the aid of modern manufacturing tools and methods, I assist companies and startups in understanding mass production systems and building their products in the most effective way possible. I have utilized my manufacturing expertise to produce various products for companies, including:
+            </p>
+            <ul>
+                <li>Designing and manufacturing an Autonomous Delivery Robot (also known as a Sidewalk Delivery Robot) that will be responsible for delivering people's orders.</li>
+                <li>Designing and manufacturing an Agriculture Flying Robot Sprayer with my aerospace and mechanical knowledge.</li>
+                <li>Designing and building Flying Robot Thrust Stands and Test Equipment for companies and laboratories.</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <img src="https://via.placeholder.com/300" alt="Default Image">
+        </div>
+    </section>
 
-.bgimg {
-  /* Background image */
-  background-image: url('under_construction.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
-}
+    <section id="projects">
+        <h2>پروژه‌ها</h2>
+        <ul>
+            <li><a href="#">پروژه ۱</a></li>
+            <li><a href="#">پروژه ۲</a></li>
+            <li><a href="#">پروژه ۳</a></li>
+        </ul>
+    </section>
 
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+    <section id="contact">
+        <h2>تماس با من</h2>
+        <p>ایمیل: example@example.com</p>
+    </section>
 
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-}
-			</style>
-		<script>
-			
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-		</script>
-			
-	<meta name=viewport content='width=device-width, initial-scale=1.0'/>
-	</head>
-	<body>
-		<div class="bgimg">
-  			<div class="topleft">
-    			<p>I publish my public projects here</p>
-  		</div>
-  		<div class="middle">
-		
-    		<hr>
-			
-  		</div>
-  		<div class="bottomleft">
-    		<p>Μεhdi Βαhmani 2020</p>
-  		</div>
-		</div>
-	</body>
+    <footer>
+        <p>© 2023 صفحه شخصی من</p>
+    </footer>
+</body>
 </html>
