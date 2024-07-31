@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 10px; /* Add more padding for touch targets */
     text-align: center;
 }
 
@@ -19,7 +20,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px; /* Adjusted for better spacing */
 }
 
 nav ul li a {
@@ -27,6 +28,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Two-column layout for larger screens */
 .two-column {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,57 @@ nav ul li a {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 1090px) {
+    .two-column {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .left-column, .right-column {
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    header {
+        padding: 20px 5px; /* Adjust padding for mobile */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0; /* Space between links */
+    }
+
+    .logo {
+        max-width: 80px; /* Adjust logo size for mobile */
+    }
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Adjust title size */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust section title size */
+    }
+
+    nav ul li {
+        font-size: 0.9em; /* Adjust font size for navigation */
+    }
+}
+
+
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
 }
 
 .left-column {
@@ -49,14 +102,6 @@ nav ul li a {
 .right-column img {
     max-width: 100%;
     border-radius: 5px;
-}
-
-h2 {
-    color: #333;
-}
-
-section {
-    margin-bottom: 40px;
 }
 
 footer {
