@@ -104,7 +104,7 @@ nav ul li a {
     border-radius: 5px;
 }
 .separator {
-    height: 2px; /* Thickness of the separator */
+    height: 1px; /* Thickness of the separator */
     background-color: #333; /* Color of the separator */
     margin: 20px 0; /* Spacing above and below the separator */
 }
