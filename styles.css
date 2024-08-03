@@ -36,7 +36,7 @@ nav ul li a {
 
 
 /* Mobile Styles */
-@media (max-width: 1090px) {
+@media (max-width: 768px) {
     .two-column {
         flex-direction: column; /* Stack columns on small screens */
     }
