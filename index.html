@@ -6,18 +6,86 @@
     <title>Μεhdi Βαhmani</title>
     <link rel="icon" href="images/me.jpg" type="image/jpg">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet"> <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet"> <!-- Google Fonts Link -->
+    <style>
+        /* Example CSS */
+        body {
+            font-family: 'Inter', sans-serif; /* Set the body font to Inter */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f4f4f4; /* Optional: Set a background color */
+        }
+
+        /* Example CSS */
+        header {
+            background: #333; /* Background color */
+            color: #fff; /* Text color */
+            padding: 5px; /* Set all padding to 0 */
+            position: sticky; /* Make the header sticky */
+            top: 0; /* Stick to the top of the viewport */
+            width: 100%; /* Make sure it spans the full width */
+            z-index: 1000; /* Ensure it is above other elements */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+        }
+
+        .header-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between logo/name and nav */
+            align-items: center; /* Center items vertically */
+        }
+
+        .logo-container {
+            display: flex; /* Use flexbox for logo and name */
+            align-items: center; /* Center logo and name vertically */
+        }
+
+        .logo {
+            margin-right: 5px; /* Reduced space between logo and name */
+        }
+
+        .logo-container h1 {
+            font-family: 'Lora', serif; /* Set the font to Lora */
+            font-size: 1.2em; /* Decrease font size */
+            line-height: 1; /* Reduce line height to minimize height */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav ul {
+            list-style: none; /* Remove default list styles */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+
+        nav ul li {
+            display: inline; /* Display links inline */
+            margin: 0 10px; /* Reduced space between navigation links */
+        }
+
+        nav ul li a {
+            color: #fff; /* Text color */
+            text-decoration: none; /* Remove underline */
+            font-family: 'Lora', serif; /* Set font for navigation links */
+            font-size: 0.9em; /* Adjust navigation font size */
+            line-height: 1; /* Reduce line height for navigation */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>
-            <img src="images/me.png" width="32" height="32" alt="My Logo" class="logo"> Mohammad Mehdi Bahmani</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/me.png" width="32" height="32" alt="My Logo" class="logo">
+                <h1>Mohammad Mehdi Bahmani</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="about" class="two-column">
@@ -209,13 +277,13 @@
 
             <h2>Licenses and Certifications</h2>
             <p>                
-                Certificate of Completion - <a href="https://www.sololearn.com/Certificate/1068-1097975/pdf/" target="_blank" rel="noopener noreferrer">Java Course</a> , issued by sololearn (Jul. 2019)
+                Certificate of Completion - <b><a href="https://www.sololearn.com/Certificate/1068-1097975/pdf/" target="_blank" rel="noopener noreferrer">Java Course</a></b> , issued by sololearn (Jul. 2019)
             </p>
             <p>                
-                Certificate of Completion - <a href="https://www.sololearn.com/Certificate/1060-1097975/pdf/" target="_blank" rel="noopener noreferrer">SQL Fundamentals</a> , issued by sololearn (May. 2018)
+                Certificate of Completion - <b><a href="https://www.sololearn.com/Certificate/1060-1097975/pdf/" target="_blank" rel="noopener noreferrer">SQL Fundamentals</a></b> , issued by sololearn (May. 2018)
             </p>
             <p>                
-                Certificate of Completion - <a href="https://www.sololearn.com/Certificate/1080-1097975/pdf/" target="_blank" rel="noopener noreferrer">C# Course</a> , issued by sololearn (Sep. 2016)
+                Certificate of Completion - <b><a href="https://www.sololearn.com/Certificate/1080-1097975/pdf/" target="_blank" rel="noopener noreferrer">C# Course</a></b> , issued by sololearn (Sep. 2016)
             </p>
             
         </div>
