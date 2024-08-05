@@ -33,6 +33,60 @@ nav ul li a {
     text-decoration: none;
 }
 
+ /* Projects Section */
+ #projects {
+    padding: 20px; /* Add padding around the section */
+    background: #f4f4f4; /* Optional: Background color for the section */
+}
+
+.projects-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.projects-description {
+    flex: 1; /* Allow this column to grow */
+    margin-right: 20px; /* Space between description and images */
+}
+
+.projects-images {
+    flex: 1; /* Allow this column to grow */
+}
+
+.project-image {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul {
+        display: flex; /* Use flexbox for navigation links */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for nav */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add space between links */
+        width: 100%; /* Full width for each link */
+        text-align: center; /* Center text for links */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Stack description and images vertically on mobile */
+    }
+
+    .projects-description {
+        margin-right: 0; /* Remove margin on mobile */
+    }
+}
 
 
 /* Mobile Styles */
