@@ -292,8 +292,19 @@
         <h2 style="text-align: center;">Selected Projects</h2>
         <div class="projects-container">
             <div class="projects-description">
-                <h3>Project 1</h3>
-                <p>Description of Project 1. This project involves...</p>
+                <h3>Continuum manipulator</h3>
+                <p>This project consists of 3 robotic modules consisting of a spring as a backbone.
+                    Every module has its own MCU and sensors array including 3 loadcells to measure the torque of each motor, 8 proximity sensors and an IMU.
+                    So each module can operate on its own, however there is a serial communication bus which goes through the whole length of the arm connecting 3 modules together.
+                    This bus is connected to the PC through a wireless link lying on the bottom of the first module, where we can monitor the stats and control each module and the whole arm.
+                    <br>
+                    Every module in this configuarion has 2 DoF making the whole mechanism a 6 DoF arm.
+                    This redundancy makes the arm suitable for use in confined environment where every module can avoid collision.
+                    However, with the least orientation change in the first or second modules, the coordinate system of the third module changes, so pathplanning should be taken into consideration.
+                    This is done in PC using data trasmitted from every module and the result is sent back to each module to make them sync.
+    
+
+                     </p>
             </div>
             <div class="projects-images">
                 <img src="images/image1.jpg" width="480px" height="480px" alt="Project 1 Image" class="project-image">
