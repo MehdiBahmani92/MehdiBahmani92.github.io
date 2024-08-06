@@ -35,7 +35,7 @@ nav ul li a {
 
  /* Projects Section */
  #projects {
-    padding: 20px; /* Add padding around the section */
+    padding-inline: 20%; /* Add padding around the section */
     background: #f4f4f4; /* Optional: Background color for the section */
 }
 
