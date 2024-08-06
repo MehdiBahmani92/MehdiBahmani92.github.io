@@ -51,13 +51,16 @@ nav ul li a {
 }
 
 .projects-images {
-    flex: 1; /* Allow this column to grow */
+    flex: 1; /* Allow this column to grow */    
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
 }
 
 .project-image {
     max-width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px; /* Space between images */
+    border-radius: 5px;
 }
 
 /* Media Query for Mobile View */
