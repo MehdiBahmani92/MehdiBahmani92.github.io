@@ -293,17 +293,16 @@
         <div class="projects-container">
             <div class="projects-description">
                 <h3>Continuum manipulator</h3>
-                <p>This project consists of 3 robotic modules consisting of a spring as a backbone.
+                <p>This project is made up of of 3 robotic modules consisting of a spring as a backbone in each module.
                     Every module has its own MCU and sensors array including 3 loadcells to measure the torque of each motor, 8 proximity sensors and an IMU.
                     So each module can operate on its own, however there is a serial communication bus which goes through the whole length of the arm connecting 3 modules together.
                     This bus is connected to the PC through a wireless link lying on the bottom of the first module, where we can monitor the stats and control each module and the whole arm.
                     <br>
                     Every module in this configuarion has 2 DoF making the whole mechanism a 6 DoF arm.
-                    This redundancy makes the arm suitable for use in confined environment where every module can avoid collision.
-                    However, with the least orientation change in the first or second modules, the coordinate system of the third module changes, so pathplanning should be taken into consideration.
-                    This is done in PC using data trasmitted from every module and the result is sent back to each module to make them sync.
-    
-
+                    The intrinsic redundancy coming from this configuration makes the arm suitable for use in confined environment where every module can avoid collision.
+                    However, with the least orientation change in the first or second modules, the coordinate system of the third module changes, so pathplanning calculations should be taken into consideration.
+                    This task is done in PC using data trasmitted from every module and the result is sent back to each module to make them sync. 
+                    The inverse kinematics of the robot is calculated in the computer with a frequency of 10 Hz. So the whole arm moves smoothly and precisely. 
                      </p>
             </div>
             <div class="projects-images">
@@ -312,8 +311,20 @@
         </div>
         <div class="projects-container">
             <div class="projects-description">
-                <h3>Project 2</h3>
-                <p>Description of Project 2. This project is focused on...</p>
+                <h3>Awareness Detector</h3>
+                <p>This project involved the development and integration of an advanced driver awareness detection system as an addon for car tracking devices, specifically designed for intercity buses.
+                    Our team engineered the tracking device with additional I/O ports and serial interfaces to support future enhancements.
+                    The Awareness Detector leverages these ports to interface seamlessly with the primary tracking device.
+                    <br>
+                    <b>Key Features:</b> 
+                    <ul>
+                        <li><b>Infrared (IR) Imaging:</b> Utilizes IR technology to monitor the driver's eye openness and head angle.</li>
+                        <li><b>Real-Time Monitoring:</b> Continuously assesses the driver's alertness by detecting if the eyes are closed or the head is tilted beyond 25 degrees.</li>
+                        <li><b>Alert Mechanism:</b> If the system detects that the driver's eyes remain closed or the head stays tilted for more than 1 second, it triggers an alarm and displays a notification on the module’s LCD screen.</li>
+                        <li><b>Communication with Control Center:</b> Sends an SMS alert and a GPRS message to the control center for logging and future analysis.</li>
+                    </ul>           
+                    <b>Impact:</b> This system enhances road safety by ensuring that drivers remain alert, thereby reducing the risk of accidents due to driver fatigue or inattention. The integration with the control center allows for real-time monitoring and historical data analysis, contributing to overall fleet safety management.
+                </p>
             </div>
             <div class="projects-images">
                 <img src="images/image2.jpg" width="480px" height="480px" alt="Project 2 Image" class="project-image">
