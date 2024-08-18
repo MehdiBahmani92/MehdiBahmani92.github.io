@@ -293,17 +293,18 @@
         <div class="projects-container">
             <div class="projects-description">
                 <h3>Continuum manipulator</h3>
-                <p>This project is made up of of 3 robotic modules consisting of a spring as a backbone in each module.
-                    Every module has its own MCU and sensors array including 3 loadcells to measure the torque of each motor, 8 proximity sensors and an IMU.
-                    So each module can operate on its own, however there is a serial communication bus which goes through the whole length of the arm connecting 3 modules together.
-                    This bus is connected to the PC through a wireless link lying on the bottom of the first module, where we can monitor the stats and control each module and the whole arm.
+                <p>
+                    This project involves the development of a robotic arm composed of three modular units, each featuring a spring-based backbone.
+                    Each module is equipped with its own microcontroller unit (MCU) and a comprehensive array of sensors, including three load cells for torque measurement, eight proximity sensors, and an inertial measurement unit (IMU).
+                    This design enables independent operation of each module, while a serial communication bus runs along the length of the arm to interconnect the three modules.
+                    This bus facilitates wireless communication with a PC, allowing for real-time monitoring and control of individual modules as well as the entire arm.
                     <br>
-                    Every module in this configuarion has 2 DoF making the whole mechanism a 6 DoF arm.
-                    The intrinsic redundancy coming from this configuration makes the arm suitable for use in confined environment where every module can avoid collision.
-                    However, with the least orientation change in the first or second modules, the coordinate system of the third module changes, so pathplanning calculations should be taken into consideration.
-                    This task is done in PC using data trasmitted from every module and the result is sent back to each module to make them sync. 
-                    The inverse kinematics of the robot is calculated in the computer with a frequency of 10 Hz. So the whole arm moves smoothly and precisely. 
-                     </p>
+                    In this configuration, each module provides two degrees of freedom (DoF), resulting in a total of six DoF for the complete arm.
+                    The inherent redundancy of this setup enhances its suitability for operation in confined environments, as each module can adeptly avoid collisions.
+                    However, any minor orientation adjustments in the first or second modules can lead to changes in the coordinate system of the third module, necessitating careful path planning.
+                    This task is managed on the PC, which processes data transmitted from each module and sends synchronization commands back to ensure cohesive movement.
+                    The inverse kinematics calculations for the robotic arm are performed at a frequency of 10 Hz, resulting in smooth and precise motion across the entire arm.
+                </p>
             </div>
             <div class="projects-images">
                 <img src="images/image1.jpg" width="480px" height="480px" alt="Project 1 Image" class="project-image">
@@ -332,8 +333,26 @@
         </div>
         <div class="projects-container">
             <div class="projects-description">
-                <h3>Project 3</h3>
-                <p>Description of Project 3. This project showcases...</p>
+                <h3>Mixer Controller</h3>
+                <p>
+                    This project represents one of my earliest freelancing endeavors, where I successfully designed and manufactured a controller unit for regulating mixer temperature and spinning direction, while also providing user alerts for potential issues.
+                    This project highlights my ability to integrate both analog and digital components, as well as high-voltage (HV) and low-voltage (LV) signals within a single printed circuit board (PCB).
+                    The controller unit features a compact switching regulator that efficiently converts 220V AC to 12V DC at 2A, ensuring a reliable power supply for the relays.
+                    This regulator was carefully designed to minimize electromagnetic interference with the digital circuitry, thereby maintaining signal integrity.
+                    <br>
+                    The digital section of the board is powered by a linear regulator, which provides a stable voltage for the microcontroller and associated components.
+                    To ensure robust isolation between the high-voltage and digital sections of the circuit, I implemented a series of optocouplers that effectively trigger the relays while protecting the microcontroller from potential voltage spikes.
+                    The selected microcontroller incorporates internal EEPROM, eliminating the need for external memory components and thus enhancing cost efficiency.
+                    <br>
+                    Initially, the design included an LCD display for real-time monitoring of system modes and timers.
+                    However, upon request from the project contractor to reduce costs, I adapted the final version of the system to feature two seven-segment displays that exclusively indicate the timers.
+                    This change not only streamlined the design but also contributed to a more compact and efficient PCB layout.
+                    <br>
+                    Additionally, the board includes four push buttons that allow users to initiate the system and adjust the timers.
+                    These settings are saved to the internal EEPROM upon pressing the "set" button, ensuring that user preferences are retained even after power loss.
+                    <br>
+                    Overall, this project showcases my proficiency in designing mixed-signal PCBs that accommodate both high and low voltage components, as well as my capacity to adapt designs based on client feedback while maintaining functionality and cost-effectiveness.
+                    </p>
             </div>            
             <div class="projects-images">
                 <img src="images/image3.jpg" width="480px" height="480px" alt="Project 3 Image" class="project-image">
