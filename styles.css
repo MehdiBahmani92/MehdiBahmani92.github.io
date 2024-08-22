@@ -1,9 +1,9 @@
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #dbdbdb;
 }
 
 header {
@@ -36,7 +36,7 @@ nav ul li a {
  /* Projects Section */
  #projects {
     padding-inline: 10%; /* Add padding around the section */
-    background: #f4f4f4; /* Optional: Background color for the section */
+    background: #dbdbdb; /* Optional: Background color for the section */
 }
 
 .projects-container {
