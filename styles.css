@@ -106,6 +106,8 @@ nav ul li a {
 
     .projects-description {
         margin-right: 0; /* Remove margin on mobile */
+        text-align: justify;
+        font-size: 0.8em;
     }
 }
 
@@ -119,6 +121,7 @@ nav ul li a {
     .left-column, .right-column {
         margin-right: 0; /* Remove right margin on mobile */
         margin-bottom: 20px; /* Add bottom margin for spacing */
+        font-size: 0.8em;
     }
 
     header {
@@ -146,7 +149,7 @@ nav ul li a {
     }
 
     nav ul li {
-        font-size: 0.9em; /* Adjust font size for navigation */
+        font-size: 0.8em; /* Adjust font size for navigation */
     }
 }
 
